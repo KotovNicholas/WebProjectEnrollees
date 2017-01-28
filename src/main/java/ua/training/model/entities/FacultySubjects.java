@@ -7,7 +7,7 @@ package ua.training.model.entities;
 /**
  * Faculty subjects entity. The main purpose is to tell what subjects are need to the Enrollee.
  */
-public class FacultySubjects extends Entity{
+public class FacultySubjects extends Entity {
     /**
      * serialVersionUID.
      */

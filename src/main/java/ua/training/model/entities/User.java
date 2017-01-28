@@ -13,7 +13,6 @@ public class User extends Entity {
      */
     private static final long serialVersionUID = -4296812728878771179L;
 
-
     /**
      * id user.
      */

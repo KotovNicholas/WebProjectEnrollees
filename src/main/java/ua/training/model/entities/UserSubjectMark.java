@@ -3,7 +3,7 @@ package ua.training.model.entities;
 /**
  * Created by Plavun on 28.01.2017.
  */
-public class UserSubjectMark extends Entity{
+public class UserSubjectMark extends Entity {
 
     /**
      * serialVersionUID.

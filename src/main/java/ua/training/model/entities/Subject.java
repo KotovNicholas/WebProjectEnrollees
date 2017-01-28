@@ -7,7 +7,7 @@ package ua.training.model.entities;
 /**
  * The bean for the subject, which student have to pass.
  */
-public class Subject extends Entity{
+public class Subject extends Entity {
     /**
      * serialVersionUID
      */

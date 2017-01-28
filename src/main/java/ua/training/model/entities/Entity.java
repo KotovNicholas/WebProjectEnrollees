@@ -11,7 +11,6 @@ public abstract class Entity implements Serializable {
      * serialVersionUID.
      */
     private static final long serialVersionUID = 1369008817919379847L;
-
     /**
      * Field id.
      */
