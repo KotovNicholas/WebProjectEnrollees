@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by Kotov Nicholas on 25.01.2017.
  */
 public abstract class Entity implements Serializable {
-    
+
     /**
      * serialVersionUID.
      */
