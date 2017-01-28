@@ -21,7 +21,7 @@ public class Login implements Command {
     @Override
     public String execute(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
-        String pageToGo = "page/mainpage.jsp";
+        String pageToGo = "/mainpage.jsp";
         String email = request.getParameter(PARAM_LOGIN);
         String password = request.getParameter(PARAM_PASSWORD);
 
@@ -30,9 +30,8 @@ public class Login implements Command {
             user = userService.login(email, password);
 			if( user.isPresent()  ){
                 request.getSession().setAttribute("user", user.get());
-                pageToGo = "page/userpage.jsp";
+                pageToGo = "/userpage.jsp";
             }
-
         }
         return pageToGo;
     }
