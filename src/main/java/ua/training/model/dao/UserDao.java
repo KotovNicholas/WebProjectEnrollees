@@ -9,6 +9,6 @@ import java.util.Optional;
  */
 public interface UserDao  extends GenericDao<UserDao> {
 
-    Optional<User> getPersonByEmail(String email);
+    Optional<User> getUserByEmail(String email);
 }
 

@@ -17,12 +17,16 @@ public class UserService {
         static final UserService INSTANCE = new UserService();
     }
 
+    public static UserService getInstance(){
+        return Holder.INSTANCE;
+    }
+
     public Optional<User> login (String email , String password){
         try( DaoConnection connection = daoFactory.getConnection() ){
             connection.begin();
             UserDao dao = daoFactory.createUserDao(connection);
-            return dao.getPersonByEmail(email)
-                    .filter( person-> password.equals(person.getPassword()));
+            return dao.getUserByEmail(email)
+                    .filter(user -> password.equals(user.getPassword()));
         }
     }
 }
