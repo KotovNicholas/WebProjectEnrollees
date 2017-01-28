@@ -21,7 +21,7 @@ public class Login implements Command {
     @Override
     public String execute(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
-        String pageToGo = "/mainpage.jsp";
+        String pageToGo = "/index.jsp";
         String email = request.getParameter(PARAM_LOGIN);
         String password = request.getParameter(PARAM_PASSWORD);
 

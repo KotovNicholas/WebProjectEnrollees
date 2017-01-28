@@ -11,8 +11,11 @@
 
   <table align="center" width="600"  bgcolor="#ffcc00">
     <tr></tr>
-    <tr><td><label id="login">LOGIN</label></td><td><input type="text" class="form-control" name="login"></td></tr>
-    <tr><td><label id="password">PASSWORD</label></td><td><input type="password" class="form-control" name="password"></td></tr>
+    <form  align="center" width="600" bgcolor="#ffcc00" method="get" action="./rest/login" >
+      <input type="text" name="login"/><br/>
+      <input type="password" name="password"/>
+      <input type="submit">
+    </form>
     <tr><td><button id="btnlog" align="center" type="submit" value="submit"><label id="loginlb">login</label></button><button id="btnreg" align="center"><label id="registerlb">register</label></button></td></tr>
     <tr height="300"></tr>
 

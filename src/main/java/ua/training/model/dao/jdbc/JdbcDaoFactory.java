@@ -21,7 +21,7 @@ public class JdbcDaoFactory extends DaoFactory {
         try{
 
             InitialContext ic = new InitialContext();
-            dataSource = (DataSource) ic.lookup("java:comp/env/jdbc/SelectionCommittee");
+            dataSource = (DataSource) ic.lookup("java:comp/env/jdbc/:3306/SelectionCommittee");
         }catch(Exception e){
             throw new RuntimeException(e);
         }
