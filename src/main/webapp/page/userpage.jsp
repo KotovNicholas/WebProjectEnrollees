@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>user page</title>
 </head>
 <body>
-
+<div>
+  <table align="center" width="600" bgcolor="#ffcc00">
+    <tr><td><marquee bgcolor="#c0c0c0" behavior="scroll" align="center">We need a lot of fresh blood ..... Where are you Studets:)?</marquee></td></tr>
+  </table>
+</div>
 </body>
 </html>
